@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 
 const UserDropdown = ({ users }) => {
   const [selectedUser, setSelectedUser] = useState(null);
@@ -83,7 +82,7 @@ const UserDropdown = ({ users }) => {
       {/* Selected User Card */}
       {selectedUser && (
         <div className="mt-10 w-full max-w-md bg-[#393E46] rounded-2xl shadow-xl border border-[#948979] p-6 flex flex-col items-center text-center space-y-3">
-          <Image
+          <img
             src={selectedUser.picture.large}
             alt="User Image"
             width={100}
