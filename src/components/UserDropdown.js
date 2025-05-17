@@ -54,7 +54,7 @@ const UserDropdown = ({ users }) => {
             onClick={() => setIsOpen(!isOpen)}
             className="px-4 bg-[#948979] text-[#222831] border-t border-b border-r border-[#948979] rounded-r-xl hover:bg-[#DFD0B8] hover:text-[#222831] transition"
           >
-            🔎
+            {isOpen ? "▲" : "▼"}
           </button>
         </div>
 
